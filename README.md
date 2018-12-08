@@ -61,6 +61,10 @@ Multiple sequence alignment for these genes (all or novels only, as mentioned ab
 
 The alignment file can be used to generate phylogenetic trees using PhyML. The resulting text file is read back in and converted to XML so style can be applied to the image. The final trees are saved as 300 dpi png files--standard white background and transparent--for display in the report.
 
+### Known issues
+
+* Occasionally runs into some data that can't be handled by ClustalO. Added duplicate checking in `find_novels` to deal with one possible case. Haven't figured out the rest yet.
+
 ### TODOs (wishlist)
 
 * Add color to tree text

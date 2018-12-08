@@ -88,6 +88,7 @@ def tblastn(seq, db="est", expect=0.05, hitlist_size=500):
     organisms = ["human", "mouse", "rat"]
     entrez_filter = ("all [filter] NOT(" +
                      " OR ".join([o + "[ORGN]" for o in organisms]) + ")")
+    
     print("Performing TBLASTN search...")
     results = NCBIWWW.qblast("tblastn", db, seq,
                              expect=expect,
@@ -112,9 +113,6 @@ def inspect_results(file):
         # switch to "NCBIXML.parse if more than one search term used
         results = NCBIXML.read(result_file)
 
-    result_data = []
-    kept, discarded = 0, 0
-
     # Upper threshold values
     percent_ident = 0.80
     percent_pos = 0.90
@@ -124,6 +122,9 @@ def inspect_results(file):
           f"\tpercent identity < {percent_ident}\n"
           f"\tpercent positives < {percent_pos}\n"
           f"\tpercent gaps < {percent_gaps}")
+    
+    result_data = []
+    kept, discarded = 0, 0
     # For diagram of BLAST result object, see
     # http://biopython.org/DIST/docs/tutorial/Tutorial.html#fig:blastrecord
     for alignment in results.alignments:
@@ -175,7 +176,7 @@ def find_novels(filtered_results, search_seq, seqs_to_check=10):
 
     print(f"Checking {min([seqs_to_check, len(filtered_results)])} sequences for novelty...\n")
 
-    # List to store novel genes
+    # List to store genes after novelty check
     genes = []
 
     # Check a number of sequences for novelty
@@ -184,9 +185,10 @@ def find_novels(filtered_results, search_seq, seqs_to_check=10):
         if seq["gi"] not in [gene["gi"] for gene in genes]:
             seq["novel"] = novel_check(seq, search_seq)
             if seq["novel"]:
-                seq["gi"] += "***"
+                seq["gi"] += " ***"     # Make text stand out for novels!
             genes.append(seq)
 
+    # Save results as CSV file
     outfile = "novel_genes.csv"
     with open(outfile, "w", newline='') as csvfile:
         fieldnames = genes[0].keys()
@@ -210,6 +212,7 @@ def novel_check(seq, search_seq):
     """
     # BLASTP against nr database to confirm novelty
     # Increased hitlist size from 100 to 500 for better false-positive checking
+    # Likely should match hitlist_size used in initial search
     print(f"Performing BLASTP search on protein sequence of gi|{seq['gi']}...")
     blast = NCBIWWW.qblast("blastp", "nr", seq["subject"], hitlist_size=500)
     print("Search complete")
@@ -231,7 +234,7 @@ def novel_check(seq, search_seq):
         # If original accession isn't a hit, it's likely a false positive
         if search_seq.id in alignment.title:
             is_novel = True
-        # Known genes have 100% identity in the same species
+        # Known genes have 100% identity in the same species (# identical AAs = length)
         for hsp in alignment.hsps:
             if (search_seq.annotations['organism'] not in alignment.title
                     and hsp.identities == hsp.align_length):
@@ -262,6 +265,7 @@ def global_msa(matches, search_seq, file_name="msa"):
 
     # Build Biopython Seq objects from sequences
     for match in matches:
+        # Remove gaps from AA sequence to build Seq object's sequence
         seq = SeqRecord(Seq(match["subject"].replace("-", ""), IUPAC.protein),
                         id="gi|" + match["gi"],
                         description=match["title"])
