@@ -1,0 +1,146 @@
+CLUSTAL O(1.2.3) multiple sequence alignment
+
+
+NP_008881.2          -MNYLRRRLSDSNFMANLPNGYMTDLQRPQPPPPPP----GAHSPGATPGPGTATAERSS
+NP_598328.1          MMNFLRRRLSDSSFIANLPNGYMTDLQRPEPQQPPPPPPPGPGAASASAAPPTASPGPER
+NP_003169.2          MMNFLRRRLSDSSFIANLPNGYMTDLQRPEPQQPPPPPPPGPGAASASAAPPTASPGPER
+AAI43875.1           -MNFLRRRLSDSSFMANLPNGYMTDLQRPDSSTSSPASPAME----------------RR
+gi|85457938***       ------------------------------------------------------------
+gi|335380901***      ------------------------------------------------------------
+gi|73494128***       ------------------------------------------------------------
+gi|25731315***       ------------------------------------------------------------
+gi|62090276***       ------------------------------------------------------------
+gi|76127805***       ------------------------------------------------------------
+                                                                                 
+
+NP_008881.2          GVAPA-ASPAAPSPGSSGGGGFFSSLSNAVKQTTAAAAATFSEQVGGGSGGAGRGGAASR
+NP_598328.1          RPPPASAPAPQPAPTPSVGSSFFSSLSQAVKQTAASAGLVDA------PAPAPAAARKAK
+NP_003169.2          RPPPASAPAPQPAPTPSVGSSFFSSLSQAVKQTAASAGLVDA------PAPAPAAARKAK
+AAI43875.1           ------HPQPLAASFSSPGSSLFSSLSSAMKQAPQATSGLM-----EPPGPSTPIVQRPR
+gi|85457938***       --------------------------------------------------------SSAK
+gi|335380901***      ------------------------------------------------------------
+gi|73494128***       ------------------------------------------------------------
+gi|25731315***       ------------------------------------------------------------
+gi|62090276***       -----------------------------------------------------------K
+gi|76127805***       ------------------------------------------------------------
+                                                                                 
+
+NP_008881.2          VLLVIDEPHTDWAKYFKGKKIHGEIDIKVEQAEFSDLNLVAHANGGFSVDMEVLRNGVKV
+NP_598328.1          VLLVVDEPHADWAKCFRGKKVLGDYDIKVEQAEFSELNLVAHADGTYAVDMQVLRNGTKV
+NP_003169.2          VLLVVDEPHADWAKCFRGKKVLGDYDIKVEQAEFSELNLVAHADGTYAVDMQVLRNGTKV
+AAI43875.1           ILLVIDDAHTDWSKYFHGKKVNGEIEIRVEQAEFSELNLAAYVTGGCMVDMQVVRNGTKV
+gi|85457938***       ILLVIDDLQTDWVKVFRGRKVHSEFDIKVEQAEFSEISLVVNSTGSYNVDIDAIRNGHKV
+gi|335380901***      ----------------------------------------------------------KV
+gi|73494128***       -------------------------------------------NGTCSVDMQVIRNGTRV
+gi|25731315***       -----DEPHTDWAKAFRGKKVHGEYDIKVEQAEFSEINLIAHADGNYAVDIQVFRNGTKV
+gi|62090276***       ILLVIDEPQHEWAKVFRGKKVLGDFDIKVEQAEFSEVNLISHSNGTCNVDMQVIRSGIKV
+gi|76127805***       ------------------------------------------------------------
+                                                                                 
+
+NP_008881.2          V-RSLKPDFVLIRQHAFSMARNGDYRSLVIGLQYAGIPSVNSLHSVYNFCDKPWVFAQMV
+NP_598328.1          V-RSFRPDFVLIRQHAFGMAENEDFRHLIIGMQYAGLPSINSLESIYNFCDKPWVFAQLV
+NP_003169.2          V-RSFRPDFVLIRQHAFGMAENEDFRHLIIGMQYAGLPSINSLESIYNFCDKPWVFAQLV
+AAI43875.1           VSRSFKPDFILVRQHAYSMALGEDYRSLVIGLQYGGLPAVNSLYSVYNFCSKPWVFSQLI
+gi|85457938***       T-KSLKPDFVLIRQHAFSMDKNGDHRNIVIGLQYAGLPSVNSLHSVYNFCDKPWVFAQMS
+gi|335380901***      V-RSFRPDFVLIRQHAFGMAENEDYRNLIIGMHYASIPSVNSLDSIYNFCDKPWVFAQLV
+gi|73494128***       V-RSFKPDFVLVRQHAYSMAQNEDFRNIIIGLQYAGIPSVNSLESIYNLCDKPWAFAQLI
+gi|25731315***       V-RSFRPDFVLVRQHSFSMAENEDFRNLIIGLQYAGIPSVNSLESIYNFCDKPWVFAQLV
+gi|62090276***       T-RSFRPDFVLVRQHAFSMAQNEDFRNLIIGLQYAGVPSVNSLDSIYNLCDKPWAFSQLI
+gi|76127805***       ---------------------NEDFRNLIIGLQYGAVPCINSLESIYNLCDKPWAFAQLI
+                                          . *.* ::**::*..:*.:*** *:**:*.***.*:*: 
+
+NP_008881.2          RLHKKLGTEEFPLIDQTFYPNHKEMLSSTTYPVVVKMGHAHSGMGKVKVDNQHDFQDIAS
+NP_598328.1          AIYKTLGGEKFPLIEQTYYPNHKEMLTLPTFPVVVKIGHAHSGMGKVKVENHYDFQDIAS
+NP_003169.2          AIYKTLGGEKFPLIEQTYYPNHKEMLTLPTFPVVVKIGHAHSGMGKVKVENHYDFQDIAS
+AAI43875.1           KIFHSLGPEKFPLVEQTFFPNHKPMVTAPHFPVVVKLGHAHAGMGKIKVENQLDFQDITS
+gi|85457938***       RISKQLGPQEFPLIEQVYYPNHKEMITSPRFPVVVKMGHAHSGMGKVKVDNQYDFQDIAS
+gi|335380901***      AIYKNLGGEKFPLIEQTFYANHKEMLTLPTFPVVVKIGHAHSGMGKVKVENHYDFQDIAS
+gi|73494128***       STYNKLGADKFPLVDQTFYSNYRDMISMPTFPVVVKIGHAHSGMGKVKVDNHSDFQDIAS
+gi|25731315***       SVYKTLGPEKFPLIEQTFYPNHKEMLTMPTFPVVVKIGHAHSGMGKIKVDNHYDFQDIAS
+gi|62090276***       NNQKRLGSDKIPLIDQTFYPNYRDMITSPSFPVVVKIGHAHSGMGKVKVENVSDFQDIAS
+gi|76127805***       NTHRKLGAEKFPLIEQTFYPNYKEMVTMPSFPVVVKIGHAHSGIGKVKVENHSKFQDIAS
+                        . ** :::**::*.:: *:: *::   :*****:****:*:**:**:*  .****:*
+
+NP_008881.2          VVALTKTYATAEPFIDAKYDVRVQKIGQNYKAYMRTSVSGNW-KTNTGSAMLEQIAMSDR
+NP_598328.1          VVALTQTYATAEPFIDSKYDIRVQKIGNNYKAYMRTSISGNW-KTNTGSAMLEQIAMSDR
+NP_003169.2          VVALTQTYATAEPFIDSKYDIRVQKIGNNYKAYMRTSISGNW-KTNTGSAMLEQIAMSDR
+AAI43875.1           VVAMAKTYATTEAFIDSKYDIRIQKIGSNYKAYMRTSISGNW-KANTGSAMLEQVAMTER
+gi|85457938***       VVALTKTYATSEPFIDAKYDVRIQKIGNHYKAYMRTSISGNW-KTNTGSSMLEQVAMSDK
+gi|335380901***      VVALTQTYATAEPFIDAKYDIRIQKIGSNYKAYMRTSISGNW-KTNTGSAMLEQIAMSDR
+gi|73494128***       VVAITQTYTTTEPFIHAKYDIRVQKIGSDYKAYMRTSISGNW-KSNTGSAMLEQVAMTDK
+gi|25731315***       VVALTQTYATTEPFIDSKYDIRIQKIGSNYKAYMRTSHIWELGRQTQALPMLEQIAMSDK
+gi|62090276***       VVAITQTYCTTEPFIDAKYDIRVQKIGADYKAYMRTSISGNW-KSNTGSAMLEQFA----
+gi|76127805***       VVALTQTYTTTEPLIDSKYDIRIQKIGTDYKAYMRTSISGNW-KTNTGSAMLEQVAMTDR
+                     ***:::** *:* :*.:***:*:**** .********   :  : . .  ****.*    
+
+NP_008881.2          YKLWVDTCSEIFGGLDICAVEALHGKDGRDHIIEVVGSSMPLIGDHQDEDKQLIVELVVN
+NP_598328.1          YKLWVDTCSEMFGGLDICAVKAVHGKDGKDYIFEVMDCSMPLIGEHQVEDRQLITELVIS
+NP_003169.2          YKLWVDTCSEMFGGLDICAVKAVHGKDGKDYIFEVMDCSMPLIGEHQVEDRQLITELVIS
+AAI43875.1           YRLWVDSCSEMFGGLDICAVKAVHSKDGRDYIIEVMDSSMPLIGEHVEEDRQLMADLVVS
+gi|85457938***       YRMWVDSCADIFGGLDICAVEALHGKDGKDYIIEVDDCSMPLIGDQQDEDRVQIAELVIS
+gi|335380901***      YKLWVDSCSEIFGGLDICAVKAVHGKDGKDYIFEVMDCAMPLIGEHQAEDRQLITELVIN
+gi|73494128***       YKLWVDACADVFGGLDICAVKAIHGKDGKDYITEVVGSSMQLIGEHQAEDRQLIAAIVLA
+gi|25731315***       YKLWVE------------------------------------------------------
+gi|62090276***       ------------------------------------------------------------
+gi|76127805***       YKLWVDTCSEIFGGLDICAVKAIHGKDGKDFITEVVGSAMPLVGEHQAEDRQLIADMVLA
+                                                                                 
+
+NP_008881.2          KMAQALPRQRQRDASPGRGS---HGQTPSPGALPLGRQTSQQPAGPPAQQRPPPQGGPPQ
+NP_598328.1          KMNQLLSRTPAL--SPQRPL---TTQQPQSGTL--KDP----DSSKTPPQRPPPQGGPGQ
+NP_003169.2          KMNQLLSRTPAL--SPQRPL---TTQQPQSGTL--KDP----DSSKTPPQRPPPQGCLQY
+AAI43875.1           KMSQLPMPGGTA-PSPLRPWAPQIKSAKSPGQAQLGP------QLGQPQPRPPPQGGPRQ
+gi|85457938***       KMNXAVPRTLSSSTAGQPAQ---KAVSPQPV----------SQTKYTSFTRPSPQGGLNK
+gi|335380901***      KMNQQLSRTPAL--SPQRPS---TTQQPQSGSL--KDP----DLSKTPPPRPTPQG----
+gi|73494128***       KM----------------------------------------------------------
+gi|25731315***       ------------------------------------------------------------
+gi|62090276***       ------------------------------------------------------------
+gi|76127805***       EMNRSAEKGS-N--APQRPT---TI-QPGAGQX--GE-----------------------
+                                                                                 
+
+NP_008881.2          PG-PGPQRQGPPLQQRPPPQGQQHLSGLGPPAGSPLPQRLPSPTSAPQQPASQAAPPTQG
+NP_598328.1          PQ------------------------GMQPPGKVLPPRRLPP------------------
+NP_003169.2          IL------------------------DC--NGIAVGPKQVQA------------------
+AAI43875.1           AQSPQPQRSGSPSQQRLSPQGQQPLSP---QSGSPQQQ----------------------
+gi|85457938***       V----------PISQRP-------------------------------------------
+gi|335380901***      ------------------------------------------------------------
+gi|73494128***       ------------------------------------------------------------
+gi|25731315***       ------------------------------------------------------------
+gi|62090276***       ------------------------------------------------------------
+gi|76127805***       ------------------------------------------------------------
+                                                                                 
+
+NP_008881.2          QGRQSRPVAGGPGAPPAARPPASPSPQRQAGPPQATRQTSVSGPAPPKASGAPPGGQQRQ
+NP_598328.1          ----------GPSLPPSSSS-----------------SSSSS-----------------S
+NP_003169.2          ----------S-------------------------------------------------
+AAI43875.1           ---------------------------RSPGSPQLSRASSGSSPNQASKPGA--------
+gi|85457938***       ------------------------------------------------------------
+gi|335380901***      ------------------------------------------------------------
+gi|73494128***       ------------------------------------------------------------
+gi|25731315***       ------------------------------------------------------------
+gi|62090276***       ------------------------------------------------------------
+gi|76127805***       ------------------------------------------------------------
+                                                                                 
+
+NP_008881.2          GPPQKPPGPAGPTRQASQAGPVPRTGPPTTQQPRPSGPGPAGRPKPQLAQKPSQDVPPPA
+NP_598328.1          SAPQRPGGP---T----------------THGDAPSSSSS-----------LAEAQPPLA
+NP_003169.2          ------------------------------------------------------------
+AAI43875.1           ---------------------------TLASQPRPPVQ---GRSTSQ----------QGE
+gi|85457938***       ------------------------------------------------------------
+gi|335380901***      ------------------------------------------------------------
+gi|73494128***       ------------------------------------------------------------
+gi|25731315***       ------------------------------------------------------------
+gi|62090276***       ------------------------------------------------------------
+gi|76127805***       ------------------------------------------------------------
+                                                                                 
+
+NP_008881.2          TAAAGGPPHPQLNKSQSLTNAFNLPEPAPPRPSLSQDEVKAETIRSLRKSFASLFSD
+NP_598328.1          APPQKPQPHPQLNKSQSLTNAFSFSESSFFRSSANEDEAKAETIRSLRKSFASLFSD
+NP_003169.2          ---------------------------------------------------------
+AAI43875.1           ESKKPAPPHPHLNKSQSLTNSLSTSDTS-QRGTPSEDEAKAETIRNLRKSFASLFSD
+gi|85457938***       ---------------------------------------------------------
+gi|335380901***      ---------------------------------------------------------
+gi|73494128***       ---------------------------------------------------------
+gi|25731315***       ---------------------------------------------------------
+gi|62090276***       ---------------------------------------------------------
+gi|76127805***       ---------------------------------------------------------
+                                                                              
