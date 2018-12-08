@@ -1,7 +1,7 @@
 # Find-A-Gene Project
 
 Joshua Sacher\
-BIOT E-100 Fall 2018\
+BIOT E-100 Fall 2018
 
 ## Requirements
 
