@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu 22 Nov 2018
-Last update Sat 08 Dec 2018
+Last update Sun 09 Dec 2018
 
 @author: jrsacher
 
@@ -28,8 +28,8 @@ Entrez.email = "joshuasacher@gmail.com"
 def main():
     # Flags to indicate if portions of the program have run successfully.
     # Set to True if run, else False. Saves a lot of computation time.
-    tblastn_run = False
-    novels_run = False
+    tblastn_run = True
+    novels_run = True
     # MSA doesn't take long, so always run
     # Tree building options
     tree_all = True     # build tree from all searched sequences
@@ -90,7 +90,7 @@ def tblastn(seq, db="est", expect=0.05, hitlist_size=500):
     entrez_filter = ("all [filter] NOT(" +
                      " OR ".join([o + "[ORGN]" for o in organisms]) + ")")
     
-    print("Performing TBLASTN search on {seq}...")
+    print(f"Performing TBLASTN search on {seq}...")
     results = NCBIWWW.qblast("tblastn", db, seq,
                              expect=expect,
                              hitlist_size=hitlist_size,
@@ -110,9 +110,7 @@ def inspect_results(file):
     """
     Filters results based on identity, similarity, and gaps
     """
-    with open(file, "r") as result_file:
-        # switch to "NCBIXML.parse if more than one search term used
-        results = NCBIXML.read(result_file)
+ 
 
     # Upper threshold values
     percent_ident = 0.80
@@ -186,7 +184,7 @@ def find_novels(filtered_results, search_seq, seqs_to_check=10):
         if seq["gi"] not in [gene["gi"] for gene in genes]:
             seq["novel"] = novel_check(seq, search_seq)
             if seq["novel"]:
-                seq["gi"] += " ***"     # Make text stand out for novels!
+                seq["gi"] += "***"     # Make text stand out for novels!
             genes.append(seq)
 
     # Save results as CSV file
@@ -267,7 +265,8 @@ def global_msa(matches, search_seq, file_name="msa"):
     # Build Biopython Seq objects from sequences
     for match in matches:
         # Remove gaps and stop from AA sequence to build Seq object's sequence
-        seq = SeqRecord(Seq(match["subject"].replace("-", "").replace("*", ""),
+        # join() needed over replace() to keep "*" in novel seq titles
+        seq = SeqRecord(Seq(''.join(c for c in match["subject"] if c not in "-*"),
                         IUPAC.protein),
                         id="gi|" + match["gi"],
                         description=match["title"])
