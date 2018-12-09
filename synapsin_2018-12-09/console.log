@@ -1,0 +1,556 @@
+(base) Joshuas-MacBook-Pro:find-a-gene joshuasacher$ python find_a_gene.py
+Performing TBLASTN search...
+Search complete
+
+Results saved as 'tblastn_result.xml' to /Users/joshuasacher/Documents/find-a-gene
+Filtering results based on:
+        percent identity < 0.8
+        percent positives < 0.9
+        percent gaps < 0.1
+181 records removed; 235/416 remain.
+Filtered data saved as 'filtered_results.csv' to /Users/joshuasacher/Documents/find-a-gene
+
+Checking 50 sequences for novelty...
+
+Performing BLASTP search on protein sequence of gi|85457938...
+Search complete
+Results saved as 'BLASTP/85457938.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+*** Likely novel gene! ***
+
+Original: MNYLRRRLSDSNFMANLPNGYMTDLQRPQPPPPPPGAHSPGATPGPGTAT...FASLFSD
+Novel   : SSAKILLVIDDLQTDWVKVFRGRKVHSEFDIKVEQAEFSEISLVVNSTGS...VPISQRP
+
+Performing BLASTP search on protein sequence of gi|82964173...
+Search complete
+Results saved as 'BLASTP/82964173.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Known gene ---
+
+Performing BLASTP search on protein sequence of gi|58487980...
+Search complete
+Results saved as 'BLASTP/58487980.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Known gene ---
+
+Performing BLASTP search on protein sequence of gi|144929429...
+Search complete
+Results saved as 'BLASTP/144929429.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|335380901...
+Search complete
+Results saved as 'BLASTP/335380901.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+*** Likely novel gene! ***
+
+Original: MNYLRRRLSDSNFMANLPNGYMTDLQRPQPPPPPPGAHSPGATPGPGTAT...FASLFSD
+Novel   : KVVRSFRPDFVLIRQHAFGMAENEDYRNLIIGMHYASIPSVNSLDSIYNF...-RPTPQG
+
+Performing BLASTP search on protein sequence of gi|85465336...
+Search complete
+Results saved as 'BLASTP/85465336.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|73494128...
+Search complete
+Results saved as 'BLASTP/73494128.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+*** Likely novel gene! ***
+
+Original: MNYLRRRLSDSNFMANLPNGYMTDLQRPQPPPPPPGAHSPGATPGPGTAT...FASLFSD
+Novel   : NGTCSVDMQVIRNGTRVVRSFKPDFVLVRQHAYSMAQNEDFRNIIIGLQY...AIVLAKM
+
+Performing BLASTP search on protein sequence of gi|475032801...
+Search complete
+Results saved as 'BLASTP/475032801.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Known gene ---
+
+Performing BLASTP search on protein sequence of gi|335494908...
+Search complete
+Results saved as 'BLASTP/335494908.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|335679347...
+Search complete
+Results saved as 'BLASTP/335679347.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|335410708...
+Search complete
+Results saved as 'BLASTP/335410708.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|335400891...
+Search complete
+Results saved as 'BLASTP/335400891.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|335709018...
+Search complete
+Results saved as 'BLASTP/335709018.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|144930534...
+Search complete
+Results saved as 'BLASTP/144930534.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|25731315...
+Search complete
+Results saved as 'BLASTP/25731315.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+*** Likely novel gene! ***
+
+Original: MNYLRRRLSDSNFMANLPNGYMTDLQRPQPPPPPPGAHSPGATPGPGTAT...FASLFSD
+Novel   : DEPHTDWAKAFRGKKVHGEYDIKVEQAEFSEINLIAHADGNYAVDIQVFR...KYKLWVE
+
+Performing BLASTP search on protein sequence of gi|25873720...
+Search complete
+Results saved as 'BLASTP/25873720.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|62090276...
+Search complete
+Results saved as 'BLASTP/62090276.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+*** Likely novel gene! ***
+
+Original: MNYLRRRLSDSNFMANLPNGYMTDLQRPQPPPPPPGAHSPGATPGPGTAT...FASLFSD
+Novel   : KILLVIDEPQHEWAKVFRGKKVLGDFDIKVEQAEFSEVNLISHSNGTCNV...AMLEQFA
+
+Performing BLASTP search on protein sequence of gi|76127805...
+Search complete
+Results saved as 'BLASTP/76127805.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+*** Likely novel gene! ***
+
+Original: MNYLRRRLSDSNFMANLPNGYMTDLQRPQPPPPPPGAHSPGATPGPGTAT...FASLFSD
+Novel   : NEDFRNLIIGLQYGAVPCINSLESIYNLCDKPWAFAQLINTHRKLGAEKF...GAGQXGE
+
+Performing BLASTP search on protein sequence of gi|58575831...
+Search complete
+Results saved as 'BLASTP/58575831.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Known gene ---
+
+Performing BLASTP search on protein sequence of gi|335698371...
+Search complete
+Results saved as 'BLASTP/335698371.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|58350064...
+Search complete
+Results saved as 'BLASTP/58350064.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|284513320...
+Search complete
+Results saved as 'BLASTP/284513320.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|213069010...
+Search complete
+Results saved as 'BLASTP/213069010.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Known gene ---
+
+Performing BLASTP search on protein sequence of gi|335714452...
+Search complete
+Results saved as 'BLASTP/335714452.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|335498045...
+Search complete
+Results saved as 'BLASTP/335498045.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|39737499...
+Search complete
+Results saved as 'BLASTP/39737499.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+*** Likely novel gene! ***
+
+Original: MNYLRRRLSDSNFMANLPNGYMTDLQRPQPPPPPPGAHSPGATPGPGTAT...FASLFSD
+Novel   : KLFKGKRINGEYDIKVEQAEFCDLNLVAHSNGSFSVDLEVLRNGVKVVRS...WEFNLGS
+
+Performing BLASTP search on protein sequence of gi|335495963...
+Search complete
+Results saved as 'BLASTP/335495963.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|189003909...
+Search complete
+Results saved as 'BLASTP/189003909.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|472002142...
+Search complete
+Results saved as 'BLASTP/472002142.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|335682817...
+Search complete
+Results saved as 'BLASTP/335682817.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|335387921...
+Search complete
+Results saved as 'BLASTP/335387921.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|335497680...
+Search complete
+Results saved as 'BLASTP/335497680.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|169536607...
+Search complete
+Results saved as 'BLASTP/169536607.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Known gene ---
+
+Performing BLASTP search on protein sequence of gi|76126053...
+Search complete
+Results saved as 'BLASTP/76126053.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|76116237...
+Search complete
+Results saved as 'BLASTP/76116237.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+*** Likely novel gene! ***
+
+Original: MNYLRRRLSDSNFMANLPNGYMTDLQRPQPPPPPPGAHSPGATPGPGTAT...FASLFSD
+Novel   : MNYLRRRLSDSTFISNLPNGYMTDLQRPDGAQPPAPASPTAARSPTTGPT...VALTQTY
+
+Performing BLASTP search on protein sequence of gi|73455062...
+Search complete
+Results saved as 'BLASTP/73455062.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|335498044...
+Search complete
+Results saved as 'BLASTP/335498044.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|75879449...
+Search complete
+Results saved as 'BLASTP/75879449.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Known gene ---
+
+Performing BLASTP search on protein sequence of gi|25546368...
+Search complete
+Results saved as 'BLASTP/25546368.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Known gene ---
+
+Performing BLASTP search on protein sequence of gi|284513316...
+Search complete
+Results saved as 'BLASTP/284513316.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Known gene ---
+
+Performing BLASTP search on protein sequence of gi|25322432...
+Search complete
+Results saved as 'BLASTP/25322432.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|213081438...
+Search complete
+Results saved as 'BLASTP/213081438.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Known gene ---
+
+Performing BLASTP search on protein sequence of gi|73504749...
+Search complete
+Results saved as 'BLASTP/73504749.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|19458613...
+Search complete
+Results saved as 'BLASTP/19458613.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Known gene ---
+
+Performing BLASTP search on protein sequence of gi|218526047...
+Search complete
+Results saved as 'BLASTP/218526047.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Known gene ---
+
+Performing BLASTP search on protein sequence of gi|73469852...
+Search complete
+Results saved as 'BLASTP/73469852.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|73560544...
+Search complete
+Results saved as 'BLASTP/73560544.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|73500724...
+Search complete
+Results saved as 'BLASTP/73500724.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Performing BLASTP search on protein sequence of gi|73463940...
+Search complete
+Results saved as 'BLASTP/73463940.xml' to /Users/joshuasacher/Documents/find-a-gene/BLASTP
+--- Potential false postive ---
+
+Gene novelty data saved as 'novel_genes.csv' to /Users/joshuasacher/Documents/find-a-gene
+
+Performing multiple sequence alignment on 53 sequences
+
+Results saved as 'msa_all_out.aln' to /Users/joshuasacher/Documents/find-a-gene
+
+Building distance tree from multiple sequence alignment...
+
+
+
+
+
+
+
+                                 ..........................
+ ooooooooooooooooooooooooooooo        CURRENT SETTINGS        ooooooooooooooooooooooooooooooooooo
+                                 ..........................
+
+                . Sequence filename:                             tree_all
+                . Data type:                                     aa
+                . Alphabet size:                                 20
+                . Sequence format:                               interleaved
+                . Number of data sets:                           1
+                . Nb of bootstrapped data sets:                  25
+                . Compute approximate likelihood ratio test:     no
+                . Model name:                                    LG
+                . Proportion of invariable sites:                0.000000
+                . Number of subst. rate categs:                  4
+                . Gamma distribution parameter:                  estimated
+                . 'Middle' of each rate class:                   mean
+                . Amino acid equilibrium frequencies:            model
+                . Optimise tree topology:                        yes
+                . Tree topology search:                          NNIs
+                . Starting tree:                                 BioNJ
+                . Add random input tree:                         no
+                . Optimise branch lengths:                       yes
+                . Optimise substitution model parameters:        yes
+                . Run ID:                                        none
+                . Random seed:                                   1544329645
+                . Subtree patterns aliasing:                     no
+                . Version:                                       20120412
+
+ oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+
+. 612 patterns found (out of a total of 735 sites).
+
+. 235 sites without polymorphism (31.97%).
+
+. Computing pairwise distances...
+
+. Building BioNJ tree...
+
+. This analysis requires at least 73 Mo of memory space.
+
+. Refining the input tree...
+
+. Maximizing likelihood (using NNI moves)...
+
+. (   97 sec) [     -8818.3751] [Alpha              ][  0.984185]
+. (   97 sec) [     -8818.3751] [Topology           ][# nnis=  0]
+. (  100 sec) [     -8815.9821] [Topology           ][# nnis=  1]
+. (  103 sec) [     -8814.9957] [Topology           ][# nnis=  0]
+. (  106 sec) [     -8814.4819] [Topology           ][# nnis=  0]
+. (  109 sec) [     -8814.1789] [Topology           ]
+. (  110 sec) [     -8813.9406] [Alpha              ][  0.927658]
+. (  111 sec) [     -8813.9406] [Topology           ][# nnis=  0]
+. (  114 sec) [     -8813.6497] [Topology           ][# nnis=  0]
+. (  117 sec) [     -8813.4821] [Topology           ]
+. (  117 sec) [     -8813.4821] [Branch lengths     ]
+. (  120 sec) [     -8813.2876] [Alpha              ][  0.906338]
+. (  120 sec) [     -8813.2876] [Branch lengths     ]
+. (  123 sec) [     -8813.2216] [Alpha              ][  0.900638]
+. (  124 sec) [     -8813.2216] [Branch lengths     ]
+. (  127 sec) [     -8813.2003] [Alpha              ][  0.897851]
+. (  128 sec) [     -8813.2003] [Branch lengths     ]
+. (  130 sec) [     -8813.1912] [Alpha              ][  0.895879]
+. (  131 sec) [     -8813.1912] [Branch lengths     ]
+. (  134 sec) [     -8813.1870] [Alpha              ][  0.894974]
+. (  134 sec) [     -8813.1870] [Branch lengths     ]
+. (  137 sec) [     -8813.1843] [Alpha              ][  0.894079]
+. (  138 sec) [     -8813.1843] [Branch lengths     ]
+. (  140 sec) [     -8813.1824] [Alpha              ][  0.894079]
+. (  141 sec) [     -8813.1824] [Branch lengths     ]
+. (  144 sec) [     -8813.1806] [Alpha              ][  0.894079]
+. (  144 sec) [     -8813.1806] [Branch lengths     ]
+. (  147 sec) [     -8813.1790] [Alpha              ][  0.894079]
+. (  148 sec) [     -8813.1790] [Branch lengths     ]
+. (  150 sec) [     -8813.1774] [Alpha              ][  0.894079]
+. (  151 sec) [     -8813.1774] [Branch lengths     ]
+. (  154 sec) [     -8813.1757] [Alpha              ][  0.894079]
+. (  154 sec) [     -8813.1757] [Branch lengths     ]
+. (  157 sec) [     -8813.1741] [Alpha              ][  0.894079]
+. (  158 sec) [     -8813.1741] [Branch lengths     ]
+. (  161 sec) [     -8813.1724] [Alpha              ][  0.894079]
+. (  161 sec) [     -8813.1724] [Branch lengths     ]
+. (  164 sec) [     -8813.1706] [Alpha              ][  0.894079]
+. (  165 sec) [     -8813.1706] [Branch lengths     ]
+. (  167 sec) [     -8813.1688] [Alpha              ][  0.894079]
+. (  168 sec) [     -8813.1688] [Branch lengths     ]
+. (  171 sec) [     -8813.1670] [Alpha              ][  0.894079]
+. (  171 sec) [     -8813.1670] [Branch lengths     ]
+. (  174 sec) [     -8813.1651] [Alpha              ][  0.894079]
+. (  174 sec) [     -8813.1651] [Branch lengths     ]
+. (  177 sec) [     -8813.1632] [Alpha              ][  0.894079]
+. (  178 sec) [     -8813.1632] [Branch lengths     ]
+. (  180 sec) [     -8813.1612] [Alpha              ][  0.894079]
+. (  181 sec) [     -8813.1612] [Branch lengths     ]
+. (  183 sec) [     -8813.1592] [Alpha              ][  0.894079]
+. (  184 sec) [     -8813.1592] [Branch lengths     ]
+. (  187 sec) [     -8813.1571] [Alpha              ][  0.894079]
+. (  187 sec) [     -8813.1571] [Branch lengths     ]
+. (  190 sec) [     -8813.1550] [Alpha              ][  0.894079]
+. (  190 sec) [     -8813.1550] [Branch lengths     ]
+. (  193 sec) [     -8813.1528] [Alpha              ][  0.894079]
+. (  194 sec) [     -8813.1528] [Branch lengths     ]
+. (  196 sec) [     -8813.1505] [Alpha              ][  0.894079]
+. (  197 sec) [     -8813.1505] [Branch lengths     ]
+. (  199 sec) [     -8813.1482] [Alpha              ][  0.894079]
+. (  200 sec) [     -8813.1482] [Branch lengths     ]
+. (  203 sec) [     -8813.1459] [Alpha              ][  0.894079]
+. (  203 sec) [     -8813.1459] [Branch lengths     ]
+. (  206 sec) [     -8813.1435] [Alpha              ][  0.894079]
+. (  207 sec) [     -8813.1435] [Branch lengths     ]
+. (  209 sec) [     -8813.1410] [Alpha              ][  0.894079]
+. (  210 sec) [     -8813.1410] [Branch lengths     ]
+. (  213 sec) [     -8813.1399] [Alpha              ][  0.894079]
+. (  213 sec) [     -8813.1399] [Branch lengths     ]
+. (  216 sec) [     -8813.1391] [Alpha              ][  0.893185]
+. (  217 sec) [     -8813.1391] [Alpha              ][  0.893185]
+
+. Checking for NNIs, optimizing five branches...
+
+. (  244 sec) [     -8812.2838] [Topology           ]
+. (  245 sec) [     -8812.2838] [Branch lengths     ]
+. (  247 sec) [     -8812.2478] [Alpha              ][  0.890060]
+. (  248 sec) [     -8812.2478] [Branch lengths     ]
+. (  250 sec) [     -8812.2388] [Alpha              ][  0.889170]
+. (  251 sec) [     -8812.2388] [Branch lengths     ]
+. (  253 sec) [     -8812.2370] [Alpha              ][  0.889170]
+. (  254 sec) [     -8812.2370] [Branch lengths     ]
+. (  257 sec) [     -8812.2365] [Alpha              ][  0.889170]
+. (  258 sec) [     -8812.2365] [Alpha              ][  0.889170]
+
+. Checking for NNIs, optimizing five branches...
+
+. (  285 sec) [     -8812.2364] [Topology           ]
+
+
+. Log likelihood of the current tree: -8812.236401.
+
+. Launch bootstrap analysis on the most likely tree...
+
+
+. Non parametric bootstrap analysis
+
+  [....................]   20/  25
+  [.....]   25/  25
+
+. Printing the most likely tree in file 'tree_all_phyml_tree.txt'...
+
+. Time used 1h37m25s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+Newick tree saved as tree_all_phyml_tree.txt
+Tree images saved as tree_all.png and tree_all_transparent.png to /Users/joshuasacher/Documents/find-a-gene
+
+Performing multiple sequence alignment on 12 sequences
+
+Results saved as 'msa_novel_out.aln' to /Users/joshuasacher/Documents/find-a-gene
+
+Building distance tree from multiple sequence alignment...
+
+
+
+
+
+
+
+                                 ..........................
+ ooooooooooooooooooooooooooooo        CURRENT SETTINGS        ooooooooooooooooooooooooooooooooooo
+                                 ..........................
+
+                . Sequence filename:                             tree_novel
+                . Data type:                                     aa
+                . Alphabet size:                                 20
+                . Sequence format:                               interleaved
+                . Number of data sets:                           1
+                . Nb of bootstrapped data sets:                  100
+                . Compute approximate likelihood ratio test:     no
+                . Model name:                                    LG
+                . Proportion of invariable sites:                0.000000
+                . Number of subst. rate categs:                  4
+                . Gamma distribution parameter:                  estimated
+                . 'Middle' of each rate class:                   mean
+                . Amino acid equilibrium frequencies:            model
+                . Optimise tree topology:                        yes
+                . Tree topology search:                          NNIs
+                . Starting tree:                                 BioNJ
+                . Add random input tree:                         no
+                . Optimise branch lengths:                       yes
+                . Optimise substitution model parameters:        yes
+                . Run ID:                                        none
+                . Random seed:                                   1544335549
+                . Subtree patterns aliasing:                     no
+                . Version:                                       20120412
+
+ oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+
+. 537 patterns found (out of a total of 726 sites).
+
+. 322 sites without polymorphism (44.35%).
+
+. Computing pairwise distances...
+
+. Building BioNJ tree...
+
+. This analysis requires at least 13 Mo of memory space.
+
+. Refining the input tree...
+
+. Maximizing likelihood (using NNI moves)...
+
+. (    2 sec) [     -5747.9997] [Alpha              ][  0.964885]
+. (    2 sec) [     -5747.9997] [Topology           ][# nnis=  1]
+. (    3 sec) [     -5742.2547] [Topology           ][# nnis=  0]
+. (    3 sec) [     -5740.3697] [Topology           ][# nnis=  0]
+. (    4 sec) [     -5739.8032] [Topology           ]
+. (    4 sec) [     -5739.7043] [Alpha              ][  0.918190]
+. (    4 sec) [     -5739.7043] [Topology           ][# nnis=  0]
+. (    5 sec) [     -5739.4723] [Topology           ][# nnis=  0]
+. (    5 sec) [     -5739.3799] [Topology           ]
+. (    5 sec) [     -5739.3799] [Branch lengths     ]
+. (    6 sec) [     -5739.3107] [Alpha              ][  0.913757]
+. (    6 sec) [     -5739.3107] [Branch lengths     ]
+. (    6 sec) [     -5739.3006] [Alpha              ][  0.912843]
+. (    6 sec) [     -5739.3006] [Branch lengths     ]
+. (    7 sec) [     -5739.2975] [Alpha              ][  0.911930]
+. (    7 sec) [     -5739.2975] [Branch lengths     ]
+. (    7 sec) [     -5739.2964] [Alpha              ][  0.911930]
+. (    7 sec) [     -5739.2964] [Branch lengths     ]
+. (    8 sec) [     -5739.2960] [Alpha              ][  0.911930]
+. (    8 sec) [     -5739.2960] [Alpha              ][  0.911930]
+
+. Checking for NNIs, optimizing five branches...
+
+
+
+. Log likelihood of the current tree: -5739.296002.
+
+. Launch bootstrap analysis on the most likely tree...
+
+
+. Non parametric bootstrap analysis
+
+  [....................]   20/ 100
+  [....................]   40/ 100
+  [....................]   60/ 100
+  [....................]   80/ 100
+  [....................]  100/ 100
+
+. Printing the most likely tree in file 'tree_novel_phyml_tree.txt'...
+
+. Time used 8h1m57s
+
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+Newick tree saved as tree_novel_phyml_tree.txt
+Tree images saved as tree_novel.png and tree_novel_transparent.png to /Users/joshuasacher/Documents/find-a-gene

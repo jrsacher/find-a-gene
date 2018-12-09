@@ -35,7 +35,7 @@ To run on Windows ... good luck.
 
 As the BLAST searches can take a great deal of time to run and are performed on NCBI's server, there are options to use the saved outputs of a previous run. If `tblastn_run` or `novels_run` are set to `True`, the saved files are used; if `False`, they are (re)computed.
 
-The options `tree_all` and `tree_novel` are used to build a phylogenetic tree from all searched sequences or novel sequnces only, respectively. Tree file generation is EXTREMELY computationally expensive:
+The options `tree_all` and `tree_novel` are used to build a phylogenetic tree from all searched sequences or novel sequnces only, respectively. Tree file generation is EXTREMELY computationally expensive with a large number of sequences (taxa):
 >A rough estimate [of O] can be obtained with the formula : T \* T \* L \* A \* B \* I\
 >T (Taxa) : number of taxa\
 >L (Length) : sequences length\
@@ -49,11 +49,11 @@ The program is currently configured with 100 bootstrap replicates, which is repo
 
 The user must supply a valid accession number as `accession_in`. This is used in an Entrez query to get information on the starting gene.
 
-The gene of interest is then used as the input for a TBLASTN search. By design, it does not search human, mouse, or rat sequences, which are highly likely to be annotated. A results file of all hits is saved as `tblastn_results.xml`.
+The gene of interest is then used as the input for a TBLASTN search in the expressed sequence tag (est) database. By design, it does not search human, mouse, or rat sequences, which are highly likely to be annotated. A results file of all hits is saved as `tblastn_results.xml`.
 
 The results are then filtered based on identity, similarity, and gaps. The thought is that sequences too similar to the orignal (potentially well-studied) sequence are more likely to be annotated. This theory has not been adequately explored (but, hey, it worked out!). The filtered results are converted to a csv file and saved as `filtered_results.csv`.
 
-A number of the filtered results (default is 10; 25 as currenlty configured) are then checked for novelty. This is accomplished by extracting the gi number, then performing a BLASTP search on the sequence in the non-redundant (nr) database.\
+A number of the filtered results (default is 10; 50 as currenlty configured) are then checked for novelty. This is accomplished by extracting the gi number, then performing a BLASTP search on the sequence in the non-redundant (nr) database. This can take a VERY long time for a large number of sequences, so start small and increase as needed.\
 By Pevsner's criteria, a gene is novel if there is not a 100% match from the query organism. If the original gene of interest is not found in the results, it is likely a false positive.\
 The gi numbers and novelty (`True`/`False`) of the searched genes are added to the original data and saved as `novel_genes.csv`
 
@@ -64,6 +64,8 @@ The alignment file can be used to generate phylogenetic trees using PhyML. The r
 ### Known issues
 
 * Occasionally runs into some data that can't be handled by ClustalO. Added duplicate checking in `find_novels` to deal with one possible case. Haven't figured out the rest yet.
+* PhyML breaks if it hits non-standard characters. Only "*" is accounted for at the moment, but other non-ASCII characters in the sequence kills things.
+* If NCBI breaks, there's nothing I can do about it.
 
 ### TODOs (wishlist)
 

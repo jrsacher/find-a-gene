@@ -12,12 +12,13 @@ http://bioinfbook.org/php/C4E3k
 import csv
 import os
 from Bio import AlignIO, Entrez, Phylo, SeqIO
-from Bio.Align.Applications import ClustalOmegaCommandline, ClustalwCommandline
+from Bio.Align.Applications import ClustalOmegaCommandline
 from Bio.Alphabet import IUPAC
 from Bio.Blast import NCBIWWW, NCBIXML
 from Bio.Phylo.Applications import PhymlCommandline
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
+from distutils.util import strtobool
 from matplotlib import pyplot as plt
 
 # Change this if you aren't me!
@@ -60,21 +61,21 @@ def main():
             novel_search = [row for row in reader]
         # From the CSV, "True" and "False" are read as strings! Convert to bool
         for gene in novel_search:
-            gene["novel"] = eval(gene["novel"])
+            gene["novel"] = strtobool(gene["novel"].lower())
     else:
-        novel_search = find_novels(filtered_results, search_seq, seqs_to_check=25)
+        novel_search = find_novels(filtered_results, search_seq, seqs_to_check=50)
 
     # Perform multiple sequence alignment using clustalo and builds tree using PhyML
     # Bootstrap of 100 replicates considered more than adequate,
     # but will take a LONG time to run, so default is 10
     if tree_all:
         msa_file = global_msa(novel_search, search_seq, file_name="msa_all")
-        build_tree(msa_file, search_seq, file_name="tree_all", bootstrap=100)
+        build_tree(msa_file, search_seq, file_name="tree_all", bootstrap=25)
 
     if tree_novel:
         novels = [seq for seq in novel_search if seq["novel"]]
         msa_file = global_msa(novels, search_seq, file_name="msa_novel")
-        build_tree(msa_file, search_seq, file_name="tree_novel", bootstrap=100)   
+        build_tree(msa_file, search_seq, file_name="tree_novel", bootstrap=100)
 
 
 def tblastn(seq, db="est", expect=0.05, hitlist_size=500):
@@ -89,7 +90,7 @@ def tblastn(seq, db="est", expect=0.05, hitlist_size=500):
     entrez_filter = ("all [filter] NOT(" +
                      " OR ".join([o + "[ORGN]" for o in organisms]) + ")")
     
-    print("Performing TBLASTN search...")
+    print("Performing TBLASTN search on {seq}...")
     results = NCBIWWW.qblast("tblastn", db, seq,
                              expect=expect,
                              hitlist_size=hitlist_size,
@@ -265,8 +266,9 @@ def global_msa(matches, search_seq, file_name="msa"):
 
     # Build Biopython Seq objects from sequences
     for match in matches:
-        # Remove gaps from AA sequence to build Seq object's sequence
-        seq = SeqRecord(Seq(match["subject"].replace("-", ""), IUPAC.protein),
+        # Remove gaps and stop from AA sequence to build Seq object's sequence
+        seq = SeqRecord(Seq(match["subject"].replace("-", "").replace("*", ""),
+                        IUPAC.protein),
                         id="gi|" + match["gi"],
                         description=match["title"])
         seqs.append(seq)
@@ -308,7 +310,8 @@ def build_tree(msa_file, original, file_name="tree", bootstrap=10):
     # See https://biopython.org/wiki/Phylo for general code and settings
     # Convert to phyllip format
     tree_file = file_name   # for convenience
-    AlignIO.convert(msa_file, "clustal", tree_file, "phylip-relaxed", alphabet=IUPAC.protein)
+    AlignIO.convert(msa_file, "clustal", tree_file, "phylip-relaxed",
+                    alphabet=IUPAC.protein)
 
     # NOTE: make sure file name is "phyml"
     PhyML = PhymlCommandline("./PhyML")
@@ -321,7 +324,6 @@ def build_tree(msa_file, original, file_name="tree", bootstrap=10):
 
     # Run tree generation, print success/failure
     print("Building distance tree from multiple sequence alignment...\n")
-    print(PhyML)
     stdout, stderr = PhyML()
     print(stdout + stderr)
     print(f"Newick tree saved as {tree_file + '_phyml_tree.txt'}")
@@ -332,7 +334,6 @@ def build_tree(msa_file, original, file_name="tree", bootstrap=10):
 
     # Stylize the tree
     # Colorblind-safe colors can be checked with ColorOracle: http://colororacle.org/
-    # TODO: color labels to match branches
     for clade in tree.find_clades():
         # Bold lines
         clade.width = 3
