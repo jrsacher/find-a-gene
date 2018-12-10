@@ -110,7 +110,9 @@ def inspect_results(file):
     """
     Filters results based on identity, similarity, and gaps
     """
- 
+    with open(file, "r") as result_file:
+        # switch to "NCBIXML.parse if more than one search term used
+        results = NCBIXML.read(result_file)
 
     # Upper threshold values
     percent_ident = 0.80
@@ -264,9 +266,9 @@ def global_msa(matches, search_seq, file_name="msa"):
 
     # Build Biopython Seq objects from sequences
     for match in matches:
-        # Remove gaps and stop from AA sequence to build Seq object's sequence
-        # join() needed over replace() to keep "*" in novel seq titles
-        seq = SeqRecord(Seq(''.join(c for c in match["subject"] if c not in "-*"),
+        # Remove gaps from AA sequence to build Seq object's sequence
+        # "L*R" somehow breaks things!
+        seq = SeqRecord(Seq(match["subject"].replace("-", "").replace("L*R", "L-R"),
                         IUPAC.protein),
                         id="gi|" + match["gi"],
                         description=match["title"])

@@ -11,19 +11,19 @@
 . Initial tree: 			BioNJ
 . Model of amino acids substitution: 	LG
 . Number of taxa: 			53
-. Log-likelihood: 			-8812.23640
-. Unconstrained likelihood: 		-4590.60059
-. Parsimony: 				1331
-. Tree size: 				7.90098
+. Log-likelihood: 			-8746.38663
+. Unconstrained likelihood: 		-4601.54595
+. Parsimony: 				1318
+. Tree size: 				7.66187
 . Discrete gamma model: 		Yes
   - Number of categories: 		4
-  - Gamma shape parameter: 		0.889
+  - Gamma shape parameter: 		0.909
 
 . Run ID:				none
-. Random seed:				1544382360
+. Random seed:				1544403129
 . Subtree patterns aliasing:		no
 . Version:				20120412
-. Time used:				0h4m41s (281 seconds)
+. Time used:				0h3m25s (205 seconds)
 
  oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
  Suggested citations:

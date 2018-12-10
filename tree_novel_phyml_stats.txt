@@ -20,7 +20,7 @@
   - Gamma shape parameter: 		0.912
 
 . Run ID:				none
-. Random seed:				1544388216
+. Random seed:				1544409207
 . Subtree patterns aliasing:		no
 . Version:				20120412
 . Time used:				0h0m13s (13 seconds)
