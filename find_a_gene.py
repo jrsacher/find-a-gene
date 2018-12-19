@@ -267,7 +267,9 @@ def global_msa(matches, search_seq, file_name="msa"):
     # Build Biopython Seq objects from sequences
     for match in matches:
         # Remove gaps from AA sequence to build Seq object's sequence
-        # "L*R" somehow breaks things!
+        # "L*R" somehow breaks things! This is a hack-y solution
+        # Better might be this:
+        # ''.join(re.split("\w\*", match["subject"])).replace("-", "")
         seq = SeqRecord(Seq(match["subject"].replace("-", "").replace("L*R", "L-R"),
                         IUPAC.protein),
                         id="gi|" + match["gi"],
