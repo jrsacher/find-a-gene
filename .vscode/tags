@@ -1,0 +1,54 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AlignIO	../find_a_gene.py	/^from Bio import AlignIO, Entrez, Phylo, SeqIO$/;"	kind:namespace	line:14
+ClustalOmegaCommandline	../find_a_gene.py	/^from Bio.Align.Applications import ClustalOmegaCommandline$/;"	kind:namespace	line:15
+Entrez	../details.py	/^from Bio import Entrez, SeqIO$/;"	kind:namespace	line:14
+Entrez	../find_a_gene.py	/^from Bio import AlignIO, Entrez, Phylo, SeqIO$/;"	kind:namespace	line:14
+IUPAC	../find_a_gene.py	/^from Bio.Alphabet import IUPAC$/;"	kind:namespace	line:16
+NCBIWWW	../find_a_gene.py	/^from Bio.Blast import NCBIWWW, NCBIXML$/;"	kind:namespace	line:17
+NCBIXML	../details.py	/^from Bio.Blast import NCBIXML$/;"	kind:namespace	line:15
+NCBIXML	../find_a_gene.py	/^from Bio.Blast import NCBIWWW, NCBIXML$/;"	kind:namespace	line:17
+Phylo	../draw_tree.py	/^from Bio import Phylo$/;"	kind:namespace	line:10
+Phylo	../find_a_gene.py	/^from Bio import AlignIO, Entrez, Phylo, SeqIO$/;"	kind:namespace	line:14
+PhymlCommandline	../find_a_gene.py	/^from Bio.Phylo.Applications import PhymlCommandline$/;"	kind:namespace	line:18
+Seq	../details.py	/^from Bio.Seq import Seq$/;"	kind:namespace	line:16
+Seq	../find_a_gene.py	/^from Bio.Seq import Seq$/;"	kind:namespace	line:19
+SeqIO	../details.py	/^from Bio import Entrez, SeqIO$/;"	kind:namespace	line:14
+SeqIO	../find_a_gene.py	/^from Bio import AlignIO, Entrez, Phylo, SeqIO$/;"	kind:namespace	line:14
+SeqRecord	../find_a_gene.py	/^from Bio.SeqRecord import SeqRecord$/;"	kind:namespace	line:20
+axes	../draw_tree.py	/^axes = fig.add_subplot(1, 1, 1)$/;"	kind:variable	line:44
+build_tree	../find_a_gene.py	/^def build_tree(msa_file, original, file_name="tree", bootstrap=10):$/;"	kind:function	line:300
+csv	../details.py	/^import csv$/;"	kind:namespace	line:13
+csv	../find_a_gene.py	/^import csv$/;"	kind:namespace	line:12
+details.py	../details.py	1;"	kind:file	line:1
+draw_tree.py	../draw_tree.py	1;"	kind:file	line:1
+fig	../draw_tree.py	/^fig = plt.figure(figsize=(1.6 * tree_len, tree_len), dpi=300)$/;"	kind:variable	line:43
+find_a_gene.py	../find_a_gene.py	1;"	kind:file	line:1
+find_novels	../find_a_gene.py	/^def find_novels(filtered_results, search_seq, seqs_to_check=10):$/;"	kind:function	line:163
+gis	../details.py	/^gis = ["gi|" + gene["gi"].replace(" ***", "") for gene in novels]$/;"	kind:variable	line:27
+global_msa	../find_a_gene.py	/^def global_msa(matches, search_seq, file_name="msa"):$/;"	kind:function	line:253
+inspect_results	../find_a_gene.py	/^def inspect_results(file):$/;"	kind:function	line:109
+link	../details.py	/^    link = "https:\/\/www.ncbi.nlm.nih.gov\/nucest\/"$/;"	kind:variable	line:42
+main	../find_a_gene.py	/^def main():$/;"	kind:function	line:28
+novel_check	../find_a_gene.py	/^def novel_check(seq, search_seq):$/;"	kind:function	line:204
+novels	../details.py	/^    novels = [row for row in reader if strtobool(row["novel"].lower())]$/;"	kind:variable	line:25
+original_id	../draw_tree.py	/^original_id = "NP_008881.2"$/;"	kind:variable	line:17
+os	../draw_tree.py	/^import os$/;"	kind:namespace	line:12
+os	../find_a_gene.py	/^import os$/;"	kind:namespace	line:13
+plt	../draw_tree.py	/^from matplotlib import pyplot as plt$/;"	kind:namespace	line:11
+plt	../find_a_gene.py	/^from matplotlib import pyplot as plt$/;"	kind:namespace	line:22
+reader	../details.py	/^    reader = csv.DictReader(infile)$/;"	kind:variable	line:24
+seqs	../details.py	/^        seqs = list(SeqIO.parse(handle, "gb"))$/;"	kind:variable	line:40
+strtobool	../details.py	/^from distutils.util import strtobool$/;"	kind:namespace	line:17
+strtobool	../find_a_gene.py	/^from distutils.util import strtobool$/;"	kind:namespace	line:21
+t	../draw_tree.py	/^t = "tree_all"$/;"	kind:variable	line:14
+tblastn	../find_a_gene.py	/^def tblastn(seq, db="est", expect=0.05, hitlist_size=500):$/;"	kind:function	line:81
+transparent	../draw_tree.py	/^            transparent=True)$/;"	kind:variable	line:48
+tree	../draw_tree.py	/^tree = Phylo.read(f"{t}_phyml_tree.txt", "newick")$/;"	kind:variable	line:15
+tree	../draw_tree.py	/^tree = tree.as_phyloxml()$/;"	kind:variable	line:16
+tree_file	../draw_tree.py	/^tree_file = t$/;"	kind:variable	line:49
+tree_len	../draw_tree.py	/^tree_len = len(tree.get_terminals())$/;"	kind:variable	line:41
